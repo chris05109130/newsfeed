@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'lato', 'Arial';
+    padding: 20px;
+}
+
+#topheader {
+    height: 50px;
+    border-bottom: 2px solid #888;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+#left {
+    display: flex;
+    justify-content: center;
+}
+
+#left ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left img {
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#left ul li {
+    padding: 0em 2em;
+    font-size: 1.em;
+}
+
+#right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#right a img {
+    width: 40px;
+    height: 40px;
+}
+
+#right a {
+    padding: 0em .4em;
+}
+
+.container {
+    display: Grid;
+    grid-template-columns: 30% 50% 20%;
+    background-color: #F5F5F5;
+    height: auto;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: ghostwhite;
+    margin-top: .2em;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    height: 400px;
+}
+
+.top {
+    letter-spacing: 1.2px;
+    font-family: inherit;
+    margin: 20px 0px;
+}
+
+.left-section p {
+    color: black;
+    text-align: center;
+}
+
+.tools {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    margin-top: 20px;
+    border-bottom: 2px solid black;
+}
+
+.area textarea {
+    width: 80%;
+}
+
+.tools h2 {
+    padding-right: 30px;
+    margin-right: 20px;
+    font-size: 1em;
+}
+
+.post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.btn {
+    background-color: firebrick;
+    width: 60%;
+    height: 30px;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.underline {
+    border-bottom: 2px solid black;
+    width: 24%;
+}
+
+.tools img {
+    width: 50px;
+    height: 40px;
+}
+
+.right-section {
+    padding: 20px;
+    margin: 20px 0px;
+    background-color: ghostwhite;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.right-section h3 {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+
+.one {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.one p {
+    margin-bottom: 20px;
+}
+
+.right-section p {
+    text-align: center;
+    margin-top: 20px;
+    width: 200px;
+}
+
+#second-middle-section {
+    border-top: 2px solid black;
+    margin-top: 20px;
+    padding: 1em;
+}
+
+.second-middle-section .resize {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.bold {
+    font-family: bold;
+}
+
+.together {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.second-middle-top {
+    display: flex;
+    margin: 20px 0px 30px 0px;
+    padding: 1em;
+}
+
+.second-middle-middle {
+    line-height: 1.5;
+    text-indent: 10px;
+    text-align: justify;
+    padding: .2em;
+}
+
+.second-middle-middle p {
+    margin: 20px;
+}
+
+.second-middle-middle img {
+    width: 50px;
+    border: 3px solid black;
+    margin-top: 20px;
+    height: 100px;
+}
+
+.second-middle-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+.second-middle-bottom a {
+    font-size: 1.5em;
+    margin-right: 20px;
+    color: black;
+}
+
+@media(min-width:320px) {
+    #topheader {
+        height: 200px;
+        grid-template-columns: 1fr;
+    }
+
+    #left {
+        display: block;
+    }
+
+    #left ul {
+        display: block;
+        text-align: center;
+    }
+
+    #left ul li {
+        padding: 0em 1em;
+        font-size: .8em;
+    }
+
+    #right {
+        display: block;
+        text-align: center;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(min-width:1024px) {
+    #topheader {
+        height: 50px;
+        grid-template-columns: 60% 40%;
+    }
+
+    #left {
+        display: flex;
+    }
+
+    #left ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #left ul li {
+        padding: 0em 2em;
+        font-size: 1.em;
+    }
+
+    #right {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .container {
+        grid-template-columns: 30% 50% 20%;
+
+    }
+}
